@@ -1,3 +1,4 @@
+            </div><!--close row opened in view/templates/header.php-->
         </div><!--close container opened in view/templates/header.php-->
         <!-- Bootstrap core JavaScript
         ================================================== -->
