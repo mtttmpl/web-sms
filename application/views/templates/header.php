@@ -21,7 +21,7 @@
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container-fluid">
-            <div class="navbar-header">
+            <div class="navbar-header col-sm-3 col-md-2">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -31,11 +31,13 @@
               <a class="navbar-brand" href="<?php echo base_url(); ?>">Web SMS</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?php echo base_url(); ?>my-account/view">My Account</a></li>
-                <li><a href="<?php echo base_url(); ?>my-account/logout">Log Out</a></li>
-
-              </ul>
+                <ul class="nav navbar-nav hidden-xs">
+                    <li><a href="#"><i class="glyphicon glyphicon-edit"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="<?php echo base_url(); ?>my-account/view">My Account</a></li>
+                    <li><a href="<?php echo base_url(); ?>my-account/logout">Log Out</a></li>
+                </ul>
             </div><!--/.nav-collapse -->
           </div>
         </nav>
