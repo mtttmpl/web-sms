@@ -1,6 +1,10 @@
 <?php
     class Folders extends CI_Controller {
         public function index() {
+            redirect('folders/inbox');
+        }
+
+        public function inbox() {
             $sidenav['selected'] = 'inbox';
             $this->load->view('templates/header');
             $this->load->view('templates/sidenav', $sidenav);
