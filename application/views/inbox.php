@@ -6,11 +6,10 @@
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Header</th>
-            <th>Header</th>
-            <th>Header</th>
-            <th>Header</th>
+            <th style="width: 50px;"></th>
+            <th>From</th>
+            <th>Message</th>
+            <th>Time</th>
           </tr>
         </thead>
         <tbody>
@@ -19,12 +18,13 @@
                 $limit = 25;
                 $count = 1;
                 while($limit > $count) :
+                    $post_date = strtotime("-2 hours");
+                    $now = strtotime("now");
                     echo '<tr>
-                      <td>1,001</td>
+                      <td><div class="unread"></div></td>
                       <td>Lorem</td>
                       <td>ipsum</td>
-                      <td>dolor</td>
-                      <td>sit</td>
+                      <td>'. timespan($post_date, $now) . ' ago' . '</td>
                     </tr>';
                     $count++;
                 endwhile;
