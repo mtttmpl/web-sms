@@ -1,5 +1,5 @@
 <?php
-    class Inbox extends CI_Controller {
+    class Folders extends CI_Controller {
         public function index() {
             $sidenav['selected'] = 'inbox';
             $this->load->view('templates/header');
