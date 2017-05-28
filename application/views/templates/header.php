@@ -39,3 +39,4 @@
             </div><!--/.nav-collapse -->
           </div>
         </nav>
+        <div class="container first"><!--closed in view/templates/footer.php-->

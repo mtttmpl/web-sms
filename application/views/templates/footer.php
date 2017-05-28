@@ -1,3 +1,4 @@
+        </div><!--close container opened in view/templates/header.php-->
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
