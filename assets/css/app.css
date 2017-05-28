@@ -33,6 +33,12 @@ body {
 .sidebar {
   display: none;
 }
+
+.mobile-nav-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 999;
+}
 @media (min-width: 768px) {
   .sidebar {
     position: fixed;
