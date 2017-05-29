@@ -90,77 +90,6 @@ body {
   margin-top: 0;
 }
 
-
-/*
- * Placeholder dashboard ideas
- */
-#pjax-loading {
-  z-index: 99999;
-  display: none;
-  position: absolute;
-  width: 50px;
-  left: 50%;
-  top: 15px;
-  margin: 0 auto;
-  color: white;
-}
-
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
-}
-.placeholders h4 {
-  margin-bottom: 0;
-}
-.placeholder {
-  margin-bottom: 20px;
-}
-.placeholder img {
-  display: inline-block;
-  border-radius: 50%;
-}
-
-.loading-spin {
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 1000ms;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: spin;
-  -moz-animation-duration: 1000ms;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: spin;
-  -ms-animation-duration: 1000ms;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
-
-  animation-name: spin;
-  animation-duration: 1000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(360deg); }
-}
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
-
 .unread {
   width:10px;
   height: 10px;
@@ -169,4 +98,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
+}
+
+.toolbar.pull-right {
+    display: inline-block;
+    margin-top: -35px;
 }
