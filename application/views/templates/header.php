@@ -31,9 +31,6 @@
               <a class="navbar-brand" href="<?php echo base_url(); ?>">Web SMS</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav hidden-xs">
-                    <li><a href="#"><i class="glyphicon glyphicon-edit"></i></a></li>
-                </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="<?php echo base_url(); ?>my-account/view">My Account</a></li>
                     <li><a href="<?php echo base_url(); ?>my-account/logout">Log Out</a></li>
