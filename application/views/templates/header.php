@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css">
 
-        <title>Imagine Chamoions</title>
+        <title>Web SMS</title>
 
         <link href="<?php echo base_url(); ?>assets/css/app.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
