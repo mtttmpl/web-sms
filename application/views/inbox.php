@@ -18,7 +18,7 @@
         <tbody>
             <?php
                 if(empty($list)) :
-                    echo '<tr><td colspan="4">It looks like you don\'t have any messages</td></tr>';
+                    echo '<tr><td colspan="4">It looks like you don\'t have any new messages</td></tr>';
                 else :
                   foreach($list as $row) :
                       $post_date = strtotime($row['time']);
