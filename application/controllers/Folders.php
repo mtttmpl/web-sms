@@ -16,10 +16,13 @@
         }
 
         public function sent() {
+            $this->load->model('folders_model');
+            $this->folders_model->folder = 2;
+            $messages['list'] = $this->folders_model->list_messages();
             $sidenav['selected'] = 'sent';
             $this->load->view('templates/header');
             $this->load->view('templates/sidenav', $sidenav);
-            $this->load->view('sent');
+            $this->load->view('sent', $messages);
             $this->load->view('templates/footer');
         }
     }
