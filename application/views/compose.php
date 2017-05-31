@@ -26,7 +26,7 @@
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="submit" class="btn btn-primary">Send</button> <a class="btn btn-link" href="javascript:window.history.back();">Cancel</a>
             </div>
         </div>
     </form>
