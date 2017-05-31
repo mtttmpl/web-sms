@@ -18,7 +18,7 @@
                 $this->load->view('compose');
             else :
                 // form did validate to action data and go to inbox
-                redirect('folders/inbox');
+                redirect('folders/sent');
             endif;
             $this->load->view('templates/footer');
         }
