@@ -17,20 +17,24 @@
         </thead>
         <tbody>
             <?php
-                // output looped table to show UI sample
-                $limit = 25;
-                $count = 1;
-                while($limit > $count) :
-                    $post_date = strtotime("-2 hours");
-                    $now = strtotime("now");
-                    echo '<tr>
-                      <td><div class="unread"></div></td>
-                      <td>Lorem</td>
-                      <td>ipsum</td>
-                      <td>'. timespan($post_date, $now) . ' ago' . '</td>
-                    </tr>';
-                    $count++;
-                endwhile;
+                if(empty($list)) :
+                    echo '<tr><td colspan="4">It looks like you don\'t have any messages</td></tr>';
+                else :
+                  foreach($list as $row) :
+                      $post_date = strtotime($row['time']);
+                      $now = strtotime("now");
+                      echo '<tr>';
+                        if($row['status'] == 0) :
+                           echo '<td><div class="unread"></div></td>';
+                        else:
+                           echo '<td></td>';
+                        endif;
+                        echo '<td>'.$row['number_from'].'</td>';
+                        echo '<td>'.$row['message'].'</td>';
+                        echo '<td>'. timespan($post_date, $now) . ' ago' . '</td>';
+                      echo '</tr>';
+                  endforeach;
+                endif;
             ?>
         </tbody>
       </table>
