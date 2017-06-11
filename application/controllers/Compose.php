@@ -18,6 +18,14 @@
                 $this->load->view('compose');
             else :
                 // form did validate to action data and go to sent messages
+                $data = array();
+                $data['number_to'] = $this->input->post('to');
+                $data['number_from'] = '01234567890';
+                $data['message'] = $this->input->post('message');
+                $data['folder'] = '2';
+                $data['status'] = '1';
+                $this->load->model('compose_model');
+                $this->compose_model->send($data);
                 redirect('folders/sent');
             endif;
             $this->load->view('templates/footer');
