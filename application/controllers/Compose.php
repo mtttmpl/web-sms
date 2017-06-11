@@ -17,7 +17,7 @@
                 $this->load->view('templates/sidenav', $sidenav);
                 $this->load->view('compose');
             else :
-                // form did validate to action data and go to inbox
+                // form did validate to action data and go to sent messages
                 redirect('folders/sent');
             endif;
             $this->load->view('templates/footer');
