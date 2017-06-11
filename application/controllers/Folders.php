@@ -8,6 +8,7 @@
             $this->load->model('folders_model');
             $this->folders_model->folder = 1;
             $messages['list'] = $this->folders_model->list_messages();
+            $sidenav['counts']['inbox'] = count($messages['list']);
             $sidenav['selected'] = 'inbox';
             $this->load->view('templates/header');
             $this->load->view('templates/sidenav', $sidenav);
